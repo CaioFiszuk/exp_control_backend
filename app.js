@@ -5,7 +5,6 @@ const db = require('./db');
 const productsRoutes = require('./routes/products');
 
 app.use(cors());
-app.options('*', cors());
 app.use(express.json());
 
 app.use('/products', productsRoutes);
